@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>家庭医生签约</title>
+  <!--<meta name="viewport"-->
+  <!--content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>-->
+  <link rel="stylesheet" href="./plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/font/iconfont.css">
+  <link rel="stylesheet" href="./css/familyDoctor.css"/>
+</head>
+<body>
+<div class="page-container page-index">
+  <aside class="full-height">
+    <ul class="side-nav">
+      <li class="nav-item active">
+        <a href="index.html">
+          <i class="icon icon-bench icon-qyshenqing"></i>
+          申请签约
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="userManage.html">
+          <i class="icon icon-bench icon-qianyue"></i>
+          签约记录
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="statistics.html">
+          <i class="icon icon-bench icon-weiqianyue"></i>
+          未签约居民
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="signresult.html">
+          <i class="icon icon-bench icon-resident_list"></i>
+          居民列表
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="index.html">
+          <i class="icon icon-bench icon-qytongji"></i>
+          签约统计
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="userManage.html">
+          <i class="icon icon-bench icon-service"></i>
+          服务记录统计
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="statistics.html">
+          <i class="icon icon-bench icon-service_log"></i>
+          医生服务记录
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="signresult.html">
+          <i class="icon icon-bench icon-qingkuang"></i>
+          服务情况登记
+        </a>
+      </li>
+    </ul>
+    <!--<div class="nav-item text-center">-->
+      <!--<a href="">-->
+        <!--返回首页-->
+      <!--</a>-->
+    <!--</div>-->
+  </aside>
+  <div class="page-content">
+    <form action="" id="form">
+      <div class="ui-search-box">
+        <div class="nav">
+          <i class="icon icon-bench icon-qyyisheng"></i>
+          <span>签约医生团队</span>
+        </div>
+        <div class="nav2">
+          <span>张祝仁签约团队</span>
+          <i class="icon icon-bench icon-skip"></i>
+        </div>
+      </div>
+      </div>
+    </form>
+    <div>
+      <table class="table table-hover text-center table-fixed">
+        <thead>
+        <tr>
+          <th width="20%">姓名</th>
+          <th width="20%">年龄</th>
+          <th width="30%">身份证号码</th>
+          <th width="30%">联系电话</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-href="./userInfo.html">
+          <td width="20%">
+            <i class="xkfont icon-nan"></i>
+            王林
+          </td>
+          <td width="20%">32</td>
+          <td width="30%">125654********0289</td>
+          <td width="30%">155****0569</td>
+        </tr>
+
+        <tr>
+          <td width="20%">
+            <i class="xkfont icon-nan"></i>
+            王林
+          </td>
+          <td width="20%">32</td>
+          <td width="30%">125654********0289</td>
+          <td width="30%">155****0569</td>
+        </tr>
+        <tr>
+          <td width="20%">
+            <i class="xkfont icon-nan"></i>
+            王林
+          </td>
+          <td width="20%">32</td>
+          <td width="30%">125654********0289</td>
+          <td width="30%">155****0569</td>
+        </tr>
+
+        </tbody>
+        <tfoot>
+        <tr>
+          <td colspan="4" class="text-right ft14">
+                            <span class="icon-gender">
+                                <span class="xkfont icon-nv"></span> 女性
+                            </span>
+            <span class="icon-gender">
+                                <span class="xkfont icon-nan"></span> 男性
+                            </span>
+          </td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script src="./plugins/jquery-1.12.4.min.js"></script>
+<script src="plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="./js/common.js" type="text/javascript" charset="utf-8"></script>
+<script>
+
+  $(function () {
+    $('#toggleBtn').change(function (e) {
+
+      var flag = $(this).prop("checked");
+      $(this).siblings('label.btn').text(!flag ? "包含下级机构" : "不含下级机构")
+
+    });
+    //清除输入框数据
+    $('.ui-times').click(function (e) {
+      $(this).siblings('input.form-control').val('');
+    });
+
+    function setTbodyHeight() {
+      var h1 = $(".page-content form").height();
+      var h2 = $(".page-content .table thead").height();
+      var h3 = $(".page-content .table tfoot").height();
+      var ctxHeight = $('.page-content').height();
+      $('.table').height(ctxHeight - h1);
+      $('.table tbody').css('display', 'block').height(ctxHeight - h1 - h2 - h3);
+    }
+
+    setTbodyHeight();
+    window.onresize = function () {
+      setTbodyHeight();
+    };
+    var tableLoad = new LoadMore({
+      sel: '.table tbody',
+      getDistance: function () {
+        var ctxHeight = $('.table-fixed tbody').height();
+        var height = 0;
+        $('.table-fixed tbody>tr').each(function (idx, val) {
+          height += $(val).height();
+        });
+        var scrollTop = $('.table-fixed tbody').scrollTop();
+        var distance = height - ctxHeight - scrollTop;
+        return distance;
+      },
+      getData: getTableListData
+    });
+    tableLoad.init();
+
+    //加载更多
+    function getTableListData() {
+      tableLoad.loading();
+      setTimeout(function () {
+        var data = Math.random();
+        if (data > 0.5) {
+          tableLoad.removeLoadHtml();
+          //载入 table数据
+          console.log("载入 table数据")
+          tableLoad.default();
+        } else {
+          console.log("没有更多");
+          tableLoad.nomore();
+        }
+      }, 2000);
+    }
+
+    //
+    $('#form').submit(function (e) {
+      e.preventDefault();
+      console.log("搜索");
+      $(".table tbody").empty();
+
+      tableLoad.default();
+    });
+  });
+
+</script>
+</body>
+</html>

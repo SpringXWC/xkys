@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>签约居民管理</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="./plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font/iconfont.min.css">
+    <link rel="stylesheet" href="./css/familyDoctor.css"/>
+</head>
+<body>
+<div class="page-container page-signing">
+    <aside class="full-height">
+        <ul class="side-nav">
+            <li class="nav-item">
+                <a href="index.html">
+                    <i class="xkfont icon-qianyue"></i>
+                    家庭签约
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="userManage.html">
+                    <i class="xkfont icon-juminguanli"></i>
+                    居民管理
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="statistics.html" >
+                    <i class="xkfont icon-qushi"></i>
+                    签约统计
+                </a>
+            </li>
+        </ul>
+        <div class="nav-item text-center">
+            <a href="">
+                返回首页
+            </a>
+        </div>
+    </aside>
+    <div class="page-content">
+        <div class="clearfix full-height">
+            <ul class="list-group ui-list-group ft20">
+                <li class="list-group-item">
+                    <div class="clearfix ui-list-item ui-bg-white">
+                        <div class="pull-right">
+                            <div class="dib">25698563263456</div>
+                            <span data-toggle="modal" data-target="#protocolPdf"
+                                  class="btn btn-primary btn-round btn-shade0">查看签约协议</span>
+                        </div>
+                        <span class="xkfont icon-dangan"></span> 档案编号
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="clearfix ui-list-item ui-bg-white">
+                        <div class="pull-right">
+                            <div class="dib">2016/08/02-2017/08/02</div>
+                        </div>
+                        <span class="xkfont icon-shijian"></span> 有效时间段
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="clearfix ui-list-item ui-bg-white">
+                        <div class="pull-right">
+                            <div class="dib">家庭签约</div>
+                        </div>
+                        <span class="xkfont icon-leixing"></span> 签约类型
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="clearfix ui-list-item ui-bg-white">
+                        <div class="pull-right">
+                            <div class="dib">张医生团队</div>
+                        </div>
+                        <span class="xkfont icon-yisheng"></span> 签约团队
+                    </div>
+                </li>
+                <li class="list-group-item unfold toggle-show">
+                    <div class="clearfix ui-list-item ui-bg-white" data-role="toggle">
+                        <div class="pull-right">
+                            <span class="glyphicon glyphicon-menu-down"></span>
+                        </div>
+                        <span class="xkfont icon-qianyueren"></span> 签约人信息（2人）
+                    </div>
+                    <div class="ft18" data-target="toggle-show">
+                        <ul class="list-group ui-list-group ui-user-info">
+                            <li class="list-group-item">
+                                <div class="clearfix ui-list-item">
+                                    <div class="pull-left">
+                                        <span class="ui-photo">
+                                            <img src="./img/touxiang.png" alt="头像">
+                                            <span class="xkfont icon-gender icon-nan"></span>
+                                        </span>
+                                        <span class="ui-username">张静怡</span> <span>（24岁）</span>
+                                    </div>
+                                    <div class="pull-right ui-text-minor">
+                                        <span class="">身份证号码：622123199305070356</span>
+                                        <span class="">联系电话：1565896523</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="clearfix ui-list-item">
+                                    <span class="xkfont icon-dizhi"></span>
+                                    广东省深圳市南山区
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="clearfix ui-list-item">
+                                    <div class="pull-left">
+                                        <span class="ui-photo">
+                                            <img src="./img/touxiang.png" alt="头像">
+                                            <span class="xkfont icon-gender icon-nv"></span>
+                                        </span>
+                                        <span class="ui-username">张静怡</span> <span>（24岁）</span>
+                                    </div>
+                                    <div class="pull-right ui-text-minor">
+                                        <span class="">身份证号码：622123199305070356</span>
+                                        <span class="">联系电话：1565896523</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="clearfix ui-list-item">
+                                    <span class="xkfont icon-dizhi"></span>
+                                    广东省深圳市南山区
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-group-item unfold toggle-show">
+                    <div class="clearfix ui-list-item ui-bg-white" data-role="toggle">
+                        <div class="pull-right">
+                            <span class="glyphicon glyphicon-menu-down"></span>
+                        </div>
+                        <span class="xkfont icon-fuwubao"></span> 签约服务包
+                    </div>
+                    <div data-target="toggle-show">
+                        <ul class="list-group ui-list-group">
+                            <li class="list-group-item">
+                                <div class="clearfix ui-list-item">
+                                    <div class="pull-right">
+                                        <span data-toggle="modal" data-target="#choosePack"
+                                              class="btn btn-primary btn-round btn-shade0">转换服务包</span>
+                                    </div>
+                                    <div class="pull-left">
+                                        <span class="list-pointer"></span>
+
+                                        <span class="ui-pack-name ui-text-minor">一般人群包</span>
+                                        <span class="xkfont icon-tips" data-target="#serverPack"
+                                              data-toggle="modal"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="clearfix ui-list-item">
+                                    <div class="pull-right">
+                                        <span data-toggle="modal" data-target="#serverPack"
+                                              class="btn btn-primary btn-round btn-shade0">转换服务包</span>
+                                    </div>
+                                    <div class="pull-left ">
+                                        <span class="list-pointer"></span>
+
+                                        <span class="ui-pack-name ui-text-minor">高血压患者服务包</span>
+                                        <span class="xkfont icon-tips" data-target="#serverPack"
+                                              data-toggle="modal"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="ui-foot-btns">
+            <a href="" class="btn btn-info btn-lg btn-round">返回</a>
+            <a data-target="#renewalModal" data-toggle="modal" class="btn btn-primary btn-lg btn-round">付款</a>
+            <a data-target="#unwindModal" data-toggle="modal" class="btn btn-warning btn-lg btn-round">取消签约</a>
+        </div>
+    </div>
+</div>
+
+<!-- 签约协议 -->
+<div class="modal fade ui-modal ui-pdf-modal" id="protocolPdf" tabindex="-1" role="dialog"
+     aria-labelledby="serverPackLabel">
+    <div class="modal-dialog modal-lg" style="height: 95%" role="document">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+        <div class="modal-content full-height">
+
+            <div class="modal-body full-height">
+                <iframe src="//baidu.com" class="full-height" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 服务包 详情 -->
+<div class="modal fade ui-modal ui-server-pack " id="serverPack" tabindex="-1" role="dialog"
+     aria-labelledby="serverPackLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="text-center">一般人群包</h3>
+                <table class="table table-border0 table-hover table-striped text-center table-condensed table-fixed">
+                    <thead>
+                    <tr>
+                        <th width="37%">项目名称</th>
+                        <th width="37%">描述</th>
+                        <th width="13%">服务次数</th>
+                        <th width="13%">服务价格</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td width="37%" class="text-left">
+                            彩色多普勒超声常规检测彩色多
+                        </td>
+                        <td width="37%" class="text-left">腹部、泌</td>
+                        <td width="13%">12</td>
+                        <td width="13%">300</td>
+                    </tr>
+                    <tr>
+                        <td width="37%">
+                            彩色多普勒超声常规检测
+                        </td>
+                        <td width="37%">腹部、泌尿</td>
+                        <td width="13%">12</td>
+                        <td width="13%">300</td>
+                    </tr>
+                    <tr>
+                        <td width="37%">
+                            彩色多普勒超声常规检测
+                        </td>
+                        <td width="37%">腹部、泌尿</td>
+                        <td width="13%">12</td>
+                        <td width="13%">300</td>
+                    </tr>
+                    <tr>
+                        <td width="37%">
+                            彩色多普勒超声常规检测
+                        </td>
+                        <td width="37%">腹部、泌尿</td>
+                        <td width="13%">12</td>
+                        <td width="13%">300</td>
+                    </tr>
+                    <tr>
+                        <td width="37%">
+                            彩色多普勒超声常规检测
+                        </td>
+                        <td width="37%">腹部、泌尿</td>
+                        <td width="13%">12</td>
+                        <td width="13%">300</td>
+                    </tr>
+                    <tr>
+                        <td width="37%">
+                            彩色多普勒超声常规检测
+                        </td>
+                        <td width="37%">腹部、泌尿</td>
+                        <td width="13%">12</td>
+                        <td width="13%">300</td>
+                    </tr>
+                    <tr>
+                        <td width="37%">
+                            彩色多普勒超声常规检测
+                        </td>
+                        <td width="37%">腹部、泌尿</td>
+                        <td width="13%">12</td>
+                        <td width="13%">300</td>
+                    </tr>
+                    <tr>
+                        <td width="37%">
+                            彩色多普勒超声常规检测
+                        </td>
+                        <td width="37%">腹部、泌尿</td>
+                        <td width="13%">12</td>
+                        <td width="13%">300</td>
+                    </tr>
+                    <tr>
+                        <td width="37%">
+                            彩色多普勒超声常规检测
+                        </td>
+                        <td width="37%">腹部、泌尿</td>
+                        <td width="13%">12</td>
+                        <td width="13%">300</td>
+                    </tr>
+                    <tr>
+                        <td width="37%">
+                            彩色多普勒超声常规检测
+                        </td>
+                        <td width="37%">腹部、泌尿</td>
+                        <td width="13%">12</td>
+                        <td width="13%">300</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="modal-footer text-center clearfix">
+                <button type="button" class="btn  btn-primary btn-round">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 转换服务包 -->
+<div class="modal fade ui-modal ui-toggle-pack " id="choosePack" tabindex="-1" role="dialog"
+     aria-labelledby="choosePackLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body row">
+                <div class="col-sm-5 full-height">
+                    <div class="modal-body-title">
+                        <div class="ui-text-primary">当前服务包</div>
+                        <h3>糖尿病服务包</h3>
+                        <div class="ui-text-primary">请选择要转换的服务包</div>
+                    </div>
+                    <ul class="list-group ui-list-group full-height">
+                        <li class="list-group-item clearfix hover">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk001">
+                                <label for="chk001">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk003">
+                                <label for="chk003">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk002">
+                                <label for="chk002">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk001">
+                                <label for="chk001">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk003">
+                                <label for="chk003">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk001">
+                                <label for="chk001">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk003">
+                                <label for="chk003">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk002">
+                                <label for="chk002">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix hover">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk001">
+                                <label for="chk001">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk003">
+                                <label for="chk003">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk002">
+                                <label for="chk002">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk001">
+                                <label for="chk001">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk003">
+                                <label for="chk003">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" name="chk" id="chk002">
+                                <label for="chk002">
+                                    <span class="xkfont icon-xuanze"></span>
+                                    一般人群包
+                                </label>
+                            </div>
+                            <div class="pull-right ">
+                                明细 <span class="xkfont icon-jiantou"></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="modal-footer text-center clearfix">
+                        <button type="button" data-dismiss="modal" class="btn btn-info btn-round">取消</button>
+                        <button type="button" class="btn btn-primary btn-round">确认</button>
+                    </div>
+                </div>
+                <div class="col-sm-7 full-height">
+                    <h3 class="text-center">一般人群包</h3>
+                    <table class="table table-border0 table-hover text-center table-condensed">
+                        <thead>
+                        <tr>
+                            <th>项目名称</th>
+                            <th>描述</th>
+                            <th width="80">服务次数</th>
+                            <th width="80">服务价格</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-left">
+                                彩色多普勒超声
+                            </td>
+                            <td class="text-left">腹部、泌</td>
+                            <td width="90">12</td>
+                            <td width="90">300</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                彩色多普勒超声常规检测彩色多普勒超声常规检测彩色
+                            </td>
+                            <td class="text-left">腹部、泌尿腹部、泌尿腹部、泌尿腹部、泌尿</td>
+                            <td width="90">12</td>
+                            <td width="90">300</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                彩色多普勒超声常规检测彩色多普勒超声常规检测彩色
+                            </td>
+                            <td>腹部、泌尿腹部、泌尿腹部、泌尿腹部、泌尿</td>
+                            <td width="90">12</td>
+                            <td width="90">300</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                彩色多普勒超声常规检测彩色多普勒超声常规检测彩色
+                            </td>
+                            <td>腹部、泌尿腹部、泌尿腹部、泌尿腹部、泌尿</td>
+                            <td width="90">12</td>
+                            <td width="90">300</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                彩色多普勒超声常规检测彩色多普勒超声常规检测彩色
+                            </td>
+                            <td>腹部、泌尿腹部、泌尿腹部、泌尿腹部、泌尿</td>
+                            <td width="90">12</td>
+                            <td width="90">300</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                彩色多普勒超声常规检测彩色多普勒超声常规检测彩色
+                            </td>
+                            <td>腹部、泌尿腹部、泌尿腹部、泌尿腹部、泌尿</td>
+                            <td width="90">12</td>
+                            <td width="90">300</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="./plugins/jquery-1.12.4.min.js"></script>
+<script src="plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="./js/common.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    //切换服务包
+    $('.ui-toggle-pack').on('click', '.list-group-item', function (e) {
+        $(this).addClass('hover').siblings('.list-group-item').removeClass('hover');
+        console.log("查看服务包");
+    });
+    //展开与隐藏
+    $('body').on('click', '.toggle-show [data-role=toggle]', function (e) {
+        var parElem = $(this).parents('.toggle-show');
+        parElem.toggleClass('unfold');
+        if (parElem.hasClass('unfold')) {
+            parElem.find('[data-target=toggle-show]').slideDown();
+        } else {
+            parElem.find('[data-target=toggle-show]').slideUp();
+        }
+    })
+</script>
+</body>
+</html>

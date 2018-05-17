@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="./plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font/iconfont.min.css">
+    <link rel="stylesheet" href="./css/familyDoctor.css"/>
+</head>
+<body>
+<div class="page-container page-userinfo">
+    <aside class="full-height">
+        <ul class="side-nav">
+            <li class="nav-item active">
+                <a href="index.html" target="miframe">
+                    <i class="xkfont icon-qianyue"></i>
+                    家庭签约
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contractManagement.html" target="miframe">
+                    <i class="xkfont icon-juminguanli"></i>
+                    居民管理
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contractManagement.html" target="miframe">
+                    <i class="xkfont icon-qushi"></i>
+                    签约统计
+                </a>
+            </li>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=772938361&site=qq&menu=yes"><img border="0"
+                                                                                                      src="http://wpa.qq.com/pa?p=2:772938361:52"
+                                                                                                      alt="点击这里给我发消息"
+                                                                                                      title="点击这里给我发消息"/></a>
+        </ul>
+        <div class="nav-item text-center">
+            <a href="">
+                返回首页
+            </a>
+        </div>
+    </aside>
+    <div class="page-content">
+        <div class="clearfix full-height">
+            <ul class="list-group ft20">
+                <li class="list-group-item">
+                    <h1>
+                        <span>赵梦月</span>
+                        <span class="ft14">女</span>
+                    </h1>
+                </li>
+                <li class="list-group-item">
+                    <span class="pull-right">622123********0359</span>
+                    <span class="xkfont icon-shenfenzheng"></span> 身份证号码
+                </li>
+                <li class="list-group-item">
+                    <span class="pull-right">24岁</span>
+                    <span class="xkfont icon-chushengriqi"></span>
+                    <span>年龄</span>
+                </li>
+                <li class="list-group-item">
+                    <span class="pull-right">汉族</span>
+                    <span class="xkfont icon-minzu"></span> 民族
+                </li>
+                <li class="list-group-item">
+                    <span class="pull-right">广东省深圳市南山区</span>
+                    <span class="xkfont icon-dizhi"></span> 现居地址
+                </li>
+                <li class="list-group-item">
+                    <span class="pull-right">13665285963</span>
+                    <span class="xkfont icon-shoujihaoma"></span> 手机号码
+                </li>
+            </ul>
+            <table class="table">
+
+            </table>
+        </div>
+        <div class="ui-foot-btns">
+            <a href="" class="btn btn-info btn-lg btn-round">返回</a>
+            <a href="" data-toggle="modal" data-backdrop="static" data-target="#emptyFamily"
+               class="btn btn-primary btn-lg btn-round">个人签约</a>
+            <a href="signingOfContract.html" class="btn btn-primary btn-lg btn-round">家庭签约</a>
+        </div>
+    </div>
+</div>
+
+<!-- 无家庭档案 -->
+<div class="modal fade" id="emptyFamily" tabindex="-1" role="dialog" aria-labelledby="emptyFamilyLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">
+            <!-- <div class="modal-header">
+
+                 <h4 class="modal-title" id="emptyFamilyLabel">Modal title</h4>
+             </div>-->
+            <div class="modal-body text-center" style="padding: 90px 10px 60px">
+                您还未创建家庭档案，请先创建家庭档案
+            </div>
+            <div class="modal-footer text-center clearfix">
+                <div class="col-xs-6">
+                    <button type="button" class="btn btn-block btn-info btn-round" data-dismiss="modal">取消</button>
+                </div>
+                <div class="col-xs-6">
+                    <button type="button" data-dismiss="modal" data-backdrop="static" data-toggle="modal"
+                            data-target="#editFamily" class="btn btn-block btn-primary btn-round">创建
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 家庭档案-->
+<div class="modal fade ui-modal ui-edit-family" id="editFamily" tabindex="-1" role="dialog"
+     aria-labelledby="emptyFamilyLabel">
+    <div class="modal-dialog" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group form-group-lg">
+                        <label class="groove-mini" for="exampleInputEmail1">家庭地址</label>
+                        <div class="row groove-mini">
+                            <div class="col-sm-4">
+                                <select name="" class="form-control ui-form-control" id="">
+                                    <option value="">家庭地址家庭地址家庭地址家庭地址家庭地址</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select name="" class="form-control ui-form-control" id="">
+                                    <option value="">asdfasdf</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select name="" class="form-control ui-form-control" id="">
+                                    <option value="">asdfasdf</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label class="groove-mini" for="exampleInputEmail1">详细地址</label>
+                        <input type="text" class="text-center form-control ui-form-control" placeholder="请输入">
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label class="groove-mini" for="exampleInputEmail1">居住面积</label>
+                        <input type="text" class="text-center form-control ui-form-control" placeholder="请输入">
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label class="groove-mini" for="exampleInputEmail1">家庭电话</label>
+                        <input type="text" class="text-center form-control ui-form-control" placeholder="请输入">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer text-center clearfix">
+                <button type="button" class="btn btn-info btn-round" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary btn-round">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./plugins/jquery-1.12.4.min.js"></script>
+<script src="plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="./js/common.js" type="text/javascript" charset="utf-8"></script>
+<script>
+
+    function showEditFamily() {
+        $('#emptyFamily').modal({
+            show: false,
+            backdrop: 'static'
+        });
+        $('#editFamily').modal({
+            show: true,
+            backdrop: 'static'
+        });
+    }
+
+
+    var table = new Table('.table', [
+        {
+            title: '序号',
+            field: 'idx',
+        },
+        {
+            title: '名字',
+            field: 'name'
+        }
+    ]);
+    table.loadMore = function () {
+
+        return
+    };
+    table.loadData([
+        {
+            idx: 1,
+            name: 'afasdf'
+        }
+    ]);
+
+
+
+</script>
+</body>
+</html>

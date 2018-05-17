@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>签约居民管理</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="./plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font/iconfont.min.css">
+    <link rel="stylesheet" href="./css/familyDoctor.css"/>
+</head>
+<body>
+<div class="page-container page-index">
+    <aside class="full-height">
+        <ul class="side-nav">
+            <li class="nav-item">
+                <a href="index.html">
+                    <i class="xkfont icon-qianyue"></i>
+                    家庭签约
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="userManage.html">
+                    <i class="xkfont icon-juminguanli"></i>
+                    居民管理
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="statistics.html" >
+                    <i class="xkfont icon-qushi"></i>
+                    签约统计
+                </a>
+            </li>
+        </ul>
+        <div class="nav-item text-center">
+            <a href="">
+                返回首页
+            </a>
+        </div>
+    </aside>
+    <div class="page-content">
+        <form action="" id="form">
+            <div class="ui-search-box clearfix">
+                <div class="col-sm-3 groove-mini btn-switch">
+                    <label for="switchBtn" class="col-xs-6 ui-ellipsis">个人签约</label>
+                    <label for="switchBtn" class="col-xs-6 ui-ellipsis">家庭签约</label>
+                    <input type="checkbox" id="switchBtn">
+                    <span class="btn btn-primary btn-round btn-block ui-ellipsis">个人签约</span>
+                </div>
+                <div class="col-sm-7 groove-mini form-group-lg">
+                    <i class="xkfont icon-sousuo"></i>
+                    <input type="text" class="form-control border-round ipt-search" placeholder="请输入姓名/手机号码/身份证号码快速查询">
+                    <span class="ui-times">&times;</span>
+                    <button class="btn btn-primary btn-round xkfont icon-sousuo"></button>
+                </div>
+                <div class="col-sm-2 groove-mini">
+                    <span data-toggle="modal" data-target="#filterModal"
+                          class="btn btn-primary btn-round btn-block ui-ellipsis">
+                        <span class="xkfont icon-shaixuan"></span> 筛选
+                    </span>
+                </div>
+            </div>
+        </form>
+        <div>
+            <table class="table table-hover text-center table-fixed">
+                <thead>
+                <tr>
+                    <th width="20%">姓名</th>
+                    <th width="10%">年龄</th>
+                    <th width="30%">身份证号码</th>
+                    <th width="20%">签约状态</th>
+                    <th width="10%">登记人</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr data-href="./signingManage.html">
+                    <td width="20%">
+                        <i class="xkfont icon-nan"></i>
+                        王林
+                    </td>
+                    <td width="10%">32</td>
+                    <td width="30%">622123********0507</td>
+                    <td width="20%">已签约（公费）</td>
+                    <td width="10%">李四</td>
+                </tr>
+                <tr data-href="./signingManage.html">
+                    <td width="20%">
+                        <i class="xkfont icon-nan"></i>
+                        王林
+                    </td>
+                    <td width="10%">32</td>
+                    <td width="30%">622123********0507</td>
+                    <td width="20%">已签约（公费）</td>
+                    <td width="10%">李四</td>
+                </tr>
+                <tr data-href="./signingManage.html">
+                    <td width="20%">
+                        <i class="xkfont icon-nan"></i>
+                        王林
+                    </td>
+                    <td width="10%">32</td>
+                    <td width="30%">622123********0507</td>
+                    <td width="20%">已签约（公费）</td>
+                    <td width="10%">李四</td>
+                </tr>
+                <tr data-href="./signingManage.html">
+                    <td width="20%">
+                        <i class="xkfont icon-nan"></i>
+                        王林
+                    </td>
+                    <td width="10%">32</td>
+                    <td width="30%">622123********0507</td>
+                    <td width="20%">已签约（公费）</td>
+                    <td width="10%">李四</td>
+                </tr>
+                <tr data-href="./signingManage.html">
+                    <td width="20%">
+                        <i class="xkfont icon-nan"></i>
+                        王林
+                    </td>
+                    <td width="10%">32</td>
+                    <td width="30%">622123********0507</td>
+                    <td width="20%">已签约（公费）</td>
+                    <td width="10%">李四</td>
+                </tr>
+                <tr data-href="./signingManage.html">
+                    <td width="20%">
+                        <i class="xkfont icon-nan"></i>
+                        王林
+                    </td>
+                    <td width="10%">32</td>
+                    <td width="30%">622123********0507</td>
+                    <td width="20%">已签约（公费）</td>
+                    <td width="10%">李四</td>
+                </tr>
+                <tr data-href="./signingManage.html">
+                    <td width="20%">
+                        <i class="xkfont icon-nan"></i>
+                        王林
+                    </td>
+                    <td width="10%">32</td>
+                    <td width="30%">622123********0507</td>
+                    <td width="20%">已签约（公费）</td>
+                    <td width="10%">李四</td>
+                </tr>
+                <tr data-href="./signingManage.html">
+                    <td width="20%">
+                        <i class="xkfont icon-nan"></i>
+                        王林
+                    </td>
+                    <td width="10%">32</td>
+                    <td width="30%">622123********0507</td>
+                    <td width="20%">已签约（公费）</td>
+                    <td width="10%">李四</td>
+                </tr>
+                <tr data-href="./signingManage.html">
+                    <td width="20%">
+                        <i class="xkfont icon-nan"></i>
+                        王林
+                    </td>
+                    <td width="10%">32</td>
+                    <td width="30%">622123********0507</td>
+                    <td width="20%">已签约（公费）</td>
+                    <td width="10%">李四</td>
+                </tr>
+                <tr data-href="./signingManage.html">
+                    <td width="20%">
+                        <i class="xkfont icon-nan"></i>
+                        王林
+                    </td>
+                    <td width="10%">32</td>
+                    <td width="30%">622123********0507</td>
+                    <td width="20%">已签约（公费）</td>
+                    <td width="10%">李四</td>
+                </tr>
+
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="4" class="text-right ft14">
+                            <span class="icon-gender">
+                                <span class="xkfont icon-nv"></span> 女性
+                            </span>
+                        <span class="icon-gender">
+                                <span class="xkfont icon-nan"></span> 男性
+                            </span>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- 筛选 -->
+<div class="modal fade ui-modal ui-list-modal" id="filterModal" tabindex="-1" role="dialog"
+     aria-labelledby="filterModalLabel">
+    <div class="modal-dialog modal-fixed-footer" role="document">
+        <div class="modal-content full-height">
+
+            <div class="modal-body full-height ui-padd0">
+                <ul class="list-group ui-list-group">
+                    <li class="list-group-item">
+                        <div class="ui-list-item ui-bg-white">签约状态</div>
+                        <div class="text-center groove clearfix">
+                            <div class="col-xs-4 groove-mini">
+                                <span data-val="0" class="btn btn-block btn-shade0 ui-ellipsis btn-minor btn-primary">全部</span>
+                            </div>
+                            <div class="col-xs-4 groove-mini">
+                                <span data-val="1" class="btn btn-block btn-shade0 ui-ellipsis btn-minor">已签约</span>
+                            </div>
+                            <div class="col-xs-4 groove-mini">
+                                <span data-val="2" class="btn btn-block btn-shade0 ui-ellipsis btn-minor">已解约</span>
+                            </div>
+                            <div class="col-xs-4 groove-mini">
+                                <span data-val="2" class="btn btn-block btn-shade0 ui-ellipsis btn-minor">待支付</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer text-center clearfix">
+                <button type="button" class="btn btn-info btn-round" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary btn-round btn-ok">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./plugins/jquery-1.12.4.min.js"></script>
+<script src="plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="./js/common.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $(function () {
+        function setTbodyHeight() {
+            var h1 = $(".page-content form").height();
+            var h2 = $(".page-content .table thead").height();
+            var h3 = $(".page-content .table tfoot").height();
+            var ctxHeight = $('.page-content').height();
+            $('.table').height(ctxHeight - h1);
+            $('.table tbody').css('display', 'block').height(ctxHeight - h1 - h2 - h3);
+        }
+        //清除输入框数据
+        $('.ui-times').click(function (e) {
+           $(this).hide().siblings('input.form-control').val('').change();
+
+        });
+        function toggleTimes() {
+            if($('.ui-times').siblings('.form-control').val()){
+                $('.ui-times').show();
+            }else {
+                $('.ui-times').hide();
+            }
+        }
+        toggleTimes();
+        $('.ipt-search').keyup(function () {
+            toggleTimes();
+        });
+        setTbodyHeight();
+        window.onresize = function () {
+            setTbodyHeight();
+        };
+        var tableLoad = new LoadMore({
+            sel: '.table tbody',
+            getDistance: function () {
+                var ctxHeight = $('.table-fixed tbody').height();
+                var height = 0;
+                $('.table-fixed tbody>tr').each(function (idx, val) {
+                    height += $(val).height();
+                });
+                var scrollTop = $('.table-fixed tbody').scrollTop();
+                var distance = height - ctxHeight - scrollTop;
+                return distance;
+            },
+            getData: getTableListData
+        });
+        tableLoad.init();
+
+        //加载更多
+        function getTableListData() {
+            tableLoad.loading();
+            setTimeout(function () {
+                var data = Math.random();
+                if (data > 0.5) {
+                    tableLoad.removeLoadHtml();
+                    //载入 table数据
+                    console.log("载入 table数据")
+                    tableLoad.default();
+                } else {
+                    console.log("没有更多");
+                    tableLoad.nomore();
+                }
+            }, 2000);
+        }
+
+        //表单提交
+        $('#form').submit(function (e) {
+            e.preventDefault();
+            console.log("搜索");
+            $(".table tbody").empty();
+
+            tableLoad.default();
+        });
+        //筛选按钮状态切换
+        $('.modal').on('click','.btn-minor',function (e) {
+            $(this).addClass('btn-primary').parent().siblings().find('.btn-minor').removeClass('btn-primary');
+        });
+
+        $('#switchBtn').change(function (e) {
+           if($(this).is(':checked')){
+               $(this).siblings('.btn').text('家庭签约');
+           }else{
+               $(this).siblings('.btn').text('个人签约');
+           }
+        })
+    });
+
+</script>
+</body>
+</html>
